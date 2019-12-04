@@ -6,17 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie-edge">
 <link rel="stylesheet" type="text/css" href="boot/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
+
   <body>
-  	<h1>¡¡¡Voy a aprender Boot!!!</h1>
+
+  <!--	<h1>¡¡¡Voy a aprender Boot y CSS!!!</h1>
+ -->
+   <div class="container-fluid border bg-light">
  
-    <div class="container-fluid">
-    	<div class="row border">
+<!-- Barra de navegacion-->
+<div class="section border">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+</div>
 
-----
-
-<div class="bd-example">
+<!--carousel -->
+<div class="bd-example" id="carro">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -25,7 +64,7 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/fondo.jpg" class="d-block w-100" alt="...">
+        <img src="img/fondocurso.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h5>First slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -56,65 +95,91 @@
     </a>
   </div>
 </div>
+<!-- contenido-->
+<div class="section" id="cards">
+	<div class="row">
+
+		<div class="col-1  col-md-3 align-middle">
+			<div class="card" style="width: 18rem;">
+  <img src="img/panel.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Paneles</h5>
+    <p class="card-text">Aprenda aqui muchos temas interesantes sobre los paneles solares</p>
+    <a href="#" class="btn btn-primary">Iniciar</a>
+  </div>
+</div>
+		</div>
 
 
+<div class="col-1  col-md-3 align-middle">
+			<div class="card" style="width: 18rem;">
+  <img src="img/ises.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Inversores</h5>
+    <p class="card-text">Aprende sobre los principales tipos de inversores solares y sus usos</p>
+    <a href="#" class="btn btn-primary">Iniciar</a>
+  </div>
+</div>
+		</div>
+
+<div class="col-1  col-md-3  align-middle">
+			<div class="card" style="width: 18rem;">
+  <img src="img/controlador.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Controladores</h5>
+    <p class="card-text">Descubre los principales tipos de controladores y aprende sobre su uso</p>
+    <a href="#" class="btn btn-primary">Iniciar</a>
+  </div>
+</div>
+		</div>
 
 
-----
-
-
-
-
-
-
-
-
-
-
-
-    	<div class="col-12" style="height:100px;">
-
-  <div id="demo" class="carousel-slide" data-ride="carousel">
-  	
-<!--Indica -->
-<ul class="carousel-indicators">
-	<li data-target="demo" data-slide-to="0" class="active"></li>
-	<li data-target="demo" data-slide-to="1"></li>
-	<li data-target="demo" data-slide-to="2"></li>
-</ul>
-<!--imagen -->
-<div class="carousel-inner">
-
-	<div class="carousel-item active">
-		<img src="img/fondo.jpg" class="img-fluid">
-		<div class="carousel-caption">
-			<h2>Primera Imagen</h2>
-			<p>Descripción de Imagen</p>
+<div class="col-1  col-md-3  align-middle">
+			<div class="card" style="width: 18rem;">
+  <img src="img/ises.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Hibridos</h5>
+    <p class="card-text">Conoce los dispositivos hibridos asi como sus implementaciones</p>
+    <a href="#" class="btn btn-primary">Iniciar</a>
+  </div>
+</div>
 		</div>
 	</div>
 
-	<div class="carousel-item ">
-		<img src="img/fondo.jpg" class="img-fluid">
-		<div class="carousel-caption">
-			<h2>Segunda Imagen</h2>
-			<p>Descripción de segunda Imagen</p>
+	<div class="row">
+		
+			<div class="col-1  col-md-3 align-middle">
+			<div class="card" style="width: 18rem;">
+  <img src="img/bateria.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Baterias</h5>
+    <p class="card-text">Descubre las diferentes opciones de baterias a usar en los sistemas de energia soalar asi como sus principales caracteristicas, ventajas y desventajas</p>
+    <a href="#" class="btn btn-primary">Iniciar</a>
+  </div>
+</div>
+		
 		</div>
-	</div>
 
+
+
+			<div class="col-1  col-md-3 align-middle">
+			<div class="card" style="width: 18rem;">
+  <img src="img/calc.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Calculadora</h5>
+    <p class="card-text">Ingresa a Nuestra Calculadora Online y calcula tu propio sistema de energia fotovoltaica basado en tus consumos mensuales o diarios.</p>
+    <a href="#" class="btn btn-primary ">Iniciar</a>
+  </div>
+</div>
+		</div>
+		
+
+	</div>
 </div>
 
-<!-- Control-->
-<a href="#demo" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
-<a href="#demo" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
 
-  </div>
-    	</div>
+   </div>
 
-
-
-
-    	</div>    	
-    </div>
 
  
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
